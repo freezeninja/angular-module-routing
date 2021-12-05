@@ -1,0 +1,22 @@
+
+<!-- <div *ngFor="let data of tableData">
+    <div class="name">{{data.name}}</div>
+    <div class="Salary">{{data.salary}}</div>
+    <div class="role">{{data.job}}</div>
+</div> -->
+
+
+<table [ngClass]="className" class="ui table">
+    <thead>
+        <tr>
+            <th *ngFor="let header of headerData">{{header.label}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let table of tableData">
+            <!-- {{table | json}} -->
+            <!-- <td *ngFor="let head of headerData">{{head['label']}}</td> -->
+            <td *ngFor="let head of headerData">{{table[head.key]}}</td>
+        </tr>
+    </tbody>
+</table>

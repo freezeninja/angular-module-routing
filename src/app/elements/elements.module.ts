@@ -5,16 +5,20 @@ import { ElementsRoutingModule } from './elements-routing.module';
 import { PlacehomeComponent } from './placehome/placehome.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { TimeDirective } from './time.directive';
+import { SharedModule} from '../shared/shared.module';
+import { SegmentComponent } from './segment/segment.component'
 
 @NgModule({
   declarations: [
     PlacehomeComponent,
     PlaceholderComponent,
-    TimeDirective
+    TimeDirective,
+    SegmentComponent
   ],
   imports: [
     CommonModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
+    SharedModule
   ],
   exports: []
 })

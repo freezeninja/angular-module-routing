@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 // custom imports 
 // import { ElementsModule } from './elements/elements.module';
 // import { CollectionModule } from './collection/collection.module';
-import { MoDsModule } from './mo-ds/mo-ds.module';
-import { ViewsModule } from './views/views.module';
+// import { MoDsModule } from './mo-ds/mo-ds.module';
+// import { ViewsModule } from './views/views.module';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './error/notfound/notfound.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -22,8 +22,6 @@ import { NavigationComponent } from './navigation/navigation.component';
   ],
   imports: [
     BrowserModule,
-    ViewsModule,
-    MoDsModule,
     AppRoutingModule
   ],
   providers: [],

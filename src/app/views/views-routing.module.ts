@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewscompoComponent } from './viewscompo/viewscompo.component'
 
 const routes: Routes = [
-  {path: 'views', component: ViewscompoComponent}
+  {path: '', component: ViewscompoComponent}
 ];
 
 @NgModule({

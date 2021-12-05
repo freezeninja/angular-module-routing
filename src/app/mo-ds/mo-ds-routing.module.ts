@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ModscompoComponent } from './modscompo/modscompo.component'
 
 const routes: Routes = [
-  {path: 'modules', component: ModscompoComponent}
+  {path: '', component: ModscompoComponent}
 ];
 
 @NgModule({
